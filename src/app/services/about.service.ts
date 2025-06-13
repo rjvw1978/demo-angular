@@ -1,20 +1,15 @@
-import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Injectable, ListenerOptions } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AboutService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  teamMembers = [
-    { id: 1, name: "Rosario", role: "Scrum Master", imageUrl: "imagenes/team/member2.jpg" },
-    { id: 2, name: "Ana", role: "Developer", imageUrl: "imagenes/team/member2.jpg" },
-    { id: 3, name: "Joaquin", role: "Developer", imageUrl: "imagenes/team/member1.jpg" },
-    { id: 4, name: "Matias", role: "Developer", imageUrl: "imagenes/team/member1.jpg" }
-  ];
-
-  getTeamMembers() {
-    return this.teamMembers;
+  getTeamMembers():Observable <any> {
+    return this.http.get<any>('data/team.json');
   }
 }

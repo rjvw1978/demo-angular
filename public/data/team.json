@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "name": "Juan Pérez",
+    "role": "Desarrollador",
+    "imageUrl": "https://example.com/images/juan.jpg"
+  },
+  {
+    "id": "2",
+    "name": "María González",
+    "role": "Diseñadora UX",
+    "imageUrl": "https://example.com/images/maria.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Carlos López",
+    "role": "Gerente de Proyecto",
+    "imageUrl": "https://example.com/images/carlos.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Ana Martínez",
+    "role": "Analista de Datos",
+    "imageUrl": "https://example.com/images/ana.jpg"
+  }
+]
+
