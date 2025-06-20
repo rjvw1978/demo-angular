@@ -8,6 +8,7 @@ import { BehaviorSubject, Observable, tap } from 'rxjs';
 export class AuthService {
 
   url: string = 'https://demo-fast-apy.onrender.com/auth';
+  url2:string = 'https://demo-fast-apy.onrender.com';
 
   private loginData:any = new BehaviorSubject<any>("{}");
 
